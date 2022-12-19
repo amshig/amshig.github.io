@@ -3,7 +3,9 @@
 	
 	.layout-vertical {
 		display: flex;
-		height: 100%;
+		position: relative;
+		top: 0;
+		bottom: 0;
 	}
 	
 	.layout-horizontal {
