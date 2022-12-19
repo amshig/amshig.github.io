@@ -3,6 +3,7 @@
 	
 	.layout-vertical {
 		display: flex;
+		min-height: 100%;
 		position: relative;
 		top: 0;
 		bottom: 0;
