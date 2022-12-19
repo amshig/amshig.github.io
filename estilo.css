@@ -1,0 +1,185 @@
+	
+	/* Layout */
+	
+	.layout-vertical {
+		display: flex;
+		height: 100%;
+	}
+	
+	.layout-horizontal {
+		flex: 1;
+		display: grid;
+		grid-template-rows: 50px 1fr;
+	}
+	
+	
+	/* Lateral */
+	
+	.lateral {
+		display: grid;
+		grid-template-rows: 250px 1fr;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-top: 20px;
+		width: 230px;
+		transition: 0.6s;
+		z-index: 999;
+	}
+	
+	.caixa-da-foto {
+		vertical-align: top;
+		width: 230px;
+		height: 230px;
+	}
+	
+	.nome {
+		font-family: "Open Sans Condensed Light", sans-serif;
+		font-size: 20px;
+		text-align: center;
+		padding: 0;
+		vertical-align: top;
+		color: rgb(40, 40, 40);
+		transition: 0.15s;
+	}
+	
+	
+	/* Navegação */
+
+	.menu {
+		padding-left: 30px;
+		display: flex;
+		height: 50px;
+	}
+	
+	.botao {
+		display: flex;
+		margin-right: 20px;
+		align-items: center;
+		font-family: "Open Sans Light", sans-serif;
+		font-size: 18px;
+		color: rgb(70, 70, 70);
+		transition: 0.15s;
+	}
+	
+	.link-botao {
+	text-decoration: inherit;
+	color: inherit;
+	font-weight: inherit;
+	}
+
+
+
+	/* Parte principal */	
+	
+	.caixa-do-texto {
+		position: relative;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+	
+	.texto {
+		font-family: "Open Sans Light", sans-serif;
+		color: rgb(40, 40, 40);
+		font-size: 15px;
+		padding-left: 30px;
+		padding-top: 30px;
+		max-width: 75%;
+	}
+
+
+/* cores de fundo */
+
+	.lateral, .menu, .caixa-do-texto {
+		background-color: rgb(212, 255, 240);
+	}
+
+
+/* Hover */
+
+	.lateral:hover {
+		box-shadow: 1px 0 20px rgb(162, 216, 200);
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	
+	/* .foto:hover {
+		box-shadow: 0 0 20px rgb(162, 216, 200);
+		transition: 0.3s;
+		} */
+	
+	.botao:hover, .nome:hover {
+		transition: 0.15s;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+	}
+	
+	
+	/* Classes de img */
+	
+	.foto {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+		transition: 0.3s;
+	}
+	
+	.foto-do-rio {
+		width: 50%;
+		object-fit: contain;
+		border-radius: 1%;
+	}
+	
+	
+	/* Gerais */
+	
+	h1, body {
+		margin: 0;
+		font-weight: 400;
+	}
+	
+	html, body {
+		width: 100%;
+		height: 100%;
+	}
+	
+	h2 {
+		font-family: "Open Sans Condensed Light", sans-serif;
+		font-size: 25pt;
+		font-weight: 400;
+	}
+	
+	a {
+	text-decoration: inherit;
+	color: rgb(0, 150, 145);
+	font-weight: 700;
+	}
+	
+	
+	
+	/* div clicável segundo resposta do Stack Overflow */
+	
+	.lateral {
+        position: relative;
+    }
+
+    .link-lateral {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
+	
+	/* vi isso em https://stackoverflow.com/a/22074404 */
+	
+	
+	
+	
+	
