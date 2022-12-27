@@ -3,12 +3,12 @@
 	
 	@font-face {
 	font-family: "Open Sans Condensed Light";
-	src: local("fontes/osanscondensed/OpenSans_Condensed-Light.ttf")format("ttf");
+	src: url("fontes/osanscondensed/OpenSans_Condensed-Light.ttf")format("woff2");
 	}
 	
 	@font-face {
 	font-family: "Open Sans Light";
-	src: local("fontes/opensans/OpenSans-Light.ttf")format("ttf");
+	src: url("fontes/opensans/OpenSans-Light.ttf")format("woff2");
 	}
 	
 	/* Layout */
